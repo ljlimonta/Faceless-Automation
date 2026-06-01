@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faceless Automation - Automate Your Social Media Content</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+
+        header {
+            background: linear-gradient(135deg, #ff6b9d 0%, #c92a4a 100%);
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        nav .logo { font-size: 24px; font-weight: bold; }
+        nav ul { list-style: none; display: flex; gap: 30px; }
+        nav a { color: white; text-decoration: none; transition: opacity 0.3s; }
+        nav a:hover { opacity: 0.8; }
+
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 150px 20px 100px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .hero h1 { font-size: 48px; margin-bottom: 20px; }
+        .hero p { font-size: 20px; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .hero .cta {
+            display: inline-block;
+            background: #ff6b9d;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .hero .cta:hover { background: #e85a8f; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        section { padding: 80px 20px; }
+        section h2 { font-size: 36px; margin-bottom: 30px; text-align: center; color: #1a1a2e; }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #ff6b9d;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover { transform: translateY(-5px); }
+        .feature-card h3 { font-size: 22px; margin-bottom: 15px; color: #ff6b9d; }
+        .feature-card p { color: #666; }
+
+        .how-it-works {
+            background: #f8f9fa;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .step {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: #ff6b9d;
+            color: white;
+            border-radius: 50%;
+            line-height: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .step h3 { margin-bottom: 10px; color: #1a1a2e; }
+        .step p { color: #666; }
+
+        .platforms {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .platform-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            font-size: 18px;
+            font-weight: bold;
+            color: #1a1a2e;
+        }
+
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer a { color: #ff6b9d; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        .footer-links { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            nav ul { gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">🎬 Faceless Automation</div>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#platforms">Platforms</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Automate Your Social Media Content</h1>
+            <p>Post relationship motivation, romance, and couple goals content automatically across TikTok, Instagram, and YouTube Shorts.</p>
+            <a href="#features" class="cta">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Why Choose Faceless Automation?</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>⚡ Automated Posting</h3>
+                    <p>Schedule and post videos automatically across multiple platforms at optimal times. No manual uploads needed.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔒 Official APIs</h3>
+                    <p>Built on TikTok, Instagram, and YouTube's official APIs. Zero bot detection. Zero account suspension risk.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Multi-Platform</h3>
+                    <p>Post to TikTok, Instagram Reels, and YouTube Shorts simultaneously from one dashboard.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💾 Content Library</h3>
+                    <p>Organize, manage, and schedule your content library. Track performance across all platforms.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎯 Smart Scheduling</h3>
+                    <p>Post at the best times for your audience. Optimize based on engagement metrics and platform algorithms.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Analytics</h3>
+                    <p>Track views, likes, comments, and shares across all platforms in one unified dashboard.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Connect Your Accounts</h3>
+                    <p>Sign in with your TikTok, Instagram, and YouTube accounts using secure OAuth authentication.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Upload Your Videos</h3>
+                    <p>Upload your relationship, motivation, or romance content videos to our platform.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Add Captions</h3>
+                    <p>Write compelling captions, hashtags, and customize settings for each platform.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Schedule & Post</h3>
+                    <p>Schedule videos to post automatically at your chosen time or post immediately to all platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platforms Section -->
+    <section id="platforms">
+        <div class="container">
+            <h2>Supported Platforms</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 30px;">Post to your favorite social media platforms with a single click.</p>
+            <div class="platform-badges">
+                <div class="badge">🎵 TikTok</div>
+                <div class="badge">📷 Instagram Reels</div>
+                <div class="badge">▶️ YouTube Shorts</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <h3>Faceless Automation</h3>
+            <p>Automate your social media content and grow your channels effortlessly.</p>
+            <div class="footer-links">
+                <a href="terms_of_service.html">Terms of Service</a>
+                <a href="privacy_policy.html">Privacy Policy</a>
+                <a href="mailto:contact@faceless-automation.com">Contact Us</a>
+                <a href="https://twitter.com/facelessauto">Twitter</a>
+            </div>
+            <p style="margin-top: 30px; color: #999;">© 2026 Faceless Automation. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
